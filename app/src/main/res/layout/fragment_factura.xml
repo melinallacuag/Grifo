@@ -11,35 +11,224 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="136dp"
         android:text="CARA"
         android:textColor="#3C4048"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintHorizontal_bias="0.065"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <ScrollView
+
+        android:layout_width="336dp"
+        android:layout_height="146dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <GridLayout
+            android:id="@+id/gridLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30sp"
+            android:layout_marginRight="30sp"
+            android:layout_weight="12"
+            android:columnCount="15"
+            android:rowCount="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintVertical_bias="0.032">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/grifo01"
+                android:layout_width="1dp"
+                android:layout_height="120sp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="8sp"
+                android:layout_marginBottom="30sp"
+                android:clickable="true"
+                android:foreground="@drawable/activitycard"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="80sp"
+                        android:layout_height="80sp"
+                        android:layout_marginBottom="5sp"
+                        android:src="@drawable/icon_gas" />
+
+                    <TextView
+                        android:id="@+id/txttienda1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Grifo"
+                        android:textAlignment="center"
+                        android:textColor="#54565A"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/grifp2"
+                android:layout_width="1dp"
+                android:layout_height="120sp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="8sp"
+                android:layout_marginBottom="30sp"
+                android:clickable="true"
+                android:foreground="@drawable/activitycard"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="80sp"
+                        android:layout_height="80sp"
+                        android:layout_marginBottom="5sp"
+                        android:src="@drawable/icon_gas" />
+
+                    <TextView
+                        android:id="@+id/txttienda2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Grifo"
+                        android:textAlignment="center"
+                        android:textColor="#54565A"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/grifo3"
+                android:layout_width="1dp"
+                android:layout_height="120sp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="8sp"
+                android:layout_marginBottom="30sp"
+                android:clickable="true"
+                android:foreground="@drawable/activitycard"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="80sp"
+                        android:layout_height="80sp"
+                        android:layout_marginBottom="5sp"
+                        android:src="@drawable/icon_gas" />
+
+                    <TextView
+                        android:id="@+id/txttiend5a"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Grifo"
+                        android:textAlignment="center"
+                        android:textColor="#54565A"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/grifo34"
+                android:layout_width="1dp"
+                android:layout_height="120sp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="8sp"
+                android:layout_marginBottom="30sp"
+                android:clickable="true"
+                android:foreground="@drawable/activitycard"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="80sp"
+                        android:layout_height="80sp"
+                        android:layout_marginBottom="5sp"
+                        android:src="@drawable/icon_gas" />
+
+                    <TextView
+                        android:id="@+id/txttienda4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Grifo"
+                        android:textAlignment="center"
+                        android:textColor="#54565A"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </GridLayout>
+    </ScrollView>
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="68dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
         android:text="MANGUERA"
         android:textColor="#3C4048"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.052"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="156dp"
         android:text="MODALIDAD"
         android:textColor="#3C4048"
         android:textSize="18sp"
