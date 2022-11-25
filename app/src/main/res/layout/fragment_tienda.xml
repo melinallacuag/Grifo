@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".TiendaFragment">
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/cat_hamburguesa"
+            android:layout_width="320sp"
+            android:layout_height="120sp"
+            android:layout_marginTop="60sp"
+            android:adjustViewBounds="true"
+            android:scaleType="center"
+            android:src="@drawable/hambur"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/roudimage" />
+
+        <TextView
+            android:id="@+id/texthamburguesa"
+            android:layout_width="200sp"
+            android:layout_height="40sp"
+            android:background="@drawable/border"
+            android:backgroundTint="#CCD9D9D9"
+            android:padding="10sp"
+            android:text="HAMBURGUESA"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/cat_hamburguesa"
+            app:layout_constraintEnd_toEndOf="@+id/cat_hamburguesa"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="@+id/cat_hamburguesa"
+            app:layout_constraintTop_toTopOf="@+id/cat_hamburguesa" />
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/cat_gaseosa"
+            android:layout_width="320sp"
+            android:layout_height="120sp"
+            android:layout_marginTop="20sp"
+            android:adjustViewBounds="true"
+            android:scaleType="center"
+            android:src="@drawable/cat_gaseosa"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cat_hamburguesa"
+            app:shapeAppearanceOverlay="@style/roudimage" />
+
+        <TextView
+            android:id="@+id/textgaseosa"
+            android:layout_width="200sp"
+            android:layout_height="40sp"
+            android:background="@drawable/border"
+            android:backgroundTint="#CCD9D9D9"
+            android:padding="10sp"
+            android:text="GASEOSAS"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/cat_gaseosa"
+            app:layout_constraintEnd_toEndOf="@+id/cat_gaseosa"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="@+id/cat_gaseosa"
+            app:layout_constraintTop_toTopOf="@+id/cat_gaseosa" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/cat_bebidas"
+            android:layout_width="320sp"
+            android:layout_height="120sp"
+            android:layout_marginTop="20sp"
+            android:adjustViewBounds="true"
+            android:scaleType="center"
+            android:src="@drawable/cat_licor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cat_gaseosa"
+            app:shapeAppearanceOverlay="@style/roudimage" />
+
+        <TextView
+            android:id="@+id/textbebidas"
+            android:layout_width="200sp"
+            android:layout_height="40sp"
+            android:background="@drawable/border"
+            android:backgroundTint="#CCD9D9D9"
+            android:padding="10sp"
+            android:text="LICORES"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:textStyle="bold"
+
+            app:layout_constraintBottom_toBottomOf="@+id/cat_bebidas"
+            app:layout_constraintEnd_toEndOf="@+id/cat_bebidas"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="@+id/cat_bebidas"
+            app:layout_constraintTop_toTopOf="@+id/cat_bebidas" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/cat_snak"
+            android:layout_width="320sp"
+            android:layout_height="120sp"
+            android:layout_marginTop="20sp"
+            android:adjustViewBounds="true"
+            android:scaleType="center"
+            android:src="@drawable/cat_snak"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.505"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cat_bebidas"
+            app:shapeAppearanceOverlay="@style/roudimage" />
+
+        <TextView
+            android:id="@+id/textsnack"
+            android:layout_width="200sp"
+            android:layout_height="40sp"
+            android:background="@drawable/border"
+            android:backgroundTint="#CCD9D9D9"
+            android:padding="10sp"
+            android:text="GALLETAS"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/cat_snak"
+            app:layout_constraintEnd_toEndOf="@+id/cat_snak"
+            app:layout_constraintStart_toStartOf="@+id/cat_snak"
+            app:layout_constraintTop_toTopOf="@+id/cat_snak" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/cat_golosinas"
+            android:layout_width="320sp"
+            android:layout_height="120sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginBottom="60sp"
+            android:adjustViewBounds="true"
+            android:scaleType="center"
+            android:src="@drawable/cat_snak"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.505"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cat_snak"
+            app:layout_constraintVertical_bias="0.142"
+            app:shapeAppearanceOverlay="@style/roudimage" />
+
+        <TextView
+            android:id="@+id/textgolosinas"
+            android:layout_width="200sp"
+            android:layout_height="40sp"
+            android:background="@drawable/border"
+            android:backgroundTint="#CCD9D9D9"
+            android:padding="10sp"
+            android:text="GOLOSINAS"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/cat_golosinas"
+            app:layout_constraintEnd_toEndOf="@+id/cat_golosinas"
+            app:layout_constraintStart_toStartOf="@+id/cat_golosinas"
+            app:layout_constraintTop_toTopOf="@+id/cat_golosinas" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".GrifoFragment">
+
+        <GridLayout
+            android:id="@+id/gridLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30sp"
+            android:layout_marginTop="30sp"
+            android:layout_marginRight="30sp"
+            android:layout_weight="12"
+            android:columnCount="2"
+            android:rowCount="6"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardFacturacion"
+                android:layout_width="1dp"
+                android:layout_height="150sp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="8sp"
+                android:clickable="true"
+                android:foreground="@drawable/activitycard"
+                android:layout_marginBottom="30sp"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="80sp"
+                        android:layout_height="80sp"
+                        android:layout_marginBottom="5sp"
+                        android:src="@drawable/icon_facturacion" />
+
+                    <TextView
+                        android:id="@+id/txttienda"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Facturación"
+                        android:textAlignment="center"
+                        android:textColor="#54565A"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardCierrex"
+                android:layout_width="1dp"
+                android:layout_height="150sp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="8sp"
+                android:layout_marginBottom="30sp"
+                android:clickable="true"
+                android:foreground="@drawable/activitycard"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="80sp"
+                        android:layout_height="80sp"
+                        android:layout_marginBottom="5sp"
+                        android:src="@drawable/icon_x" />
+
+                    <TextView
+                        android:id="@+id/txtcierrex"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Cierre X"
+                        android:textAlignment="center"
+                        android:textColor="#54565A"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardCierrez"
+                android:layout_width="1dp"
+                android:layout_height="150sp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="8sp"
+                android:layout_marginBottom="30sp"
+                android:clickable="true"
+                android:foreground="@drawable/activitycard"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="80sp"
+                        android:layout_height="80sp"
+                        android:layout_marginBottom="5sp"
+                        android:src="@drawable/icon_z" />
+
+                    <TextView
+                        android:id="@+id/txtcierrez"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Cierre Z"
+                        android:textAlignment="center"
+                        android:textColor="#54565A"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardCambioturno"
+                android:layout_width="1dp"
+                android:layout_height="150sp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="8sp"
+                android:layout_marginBottom="30sp"
+                android:clickable="true"
+                android:foreground="@drawable/activitycard"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="80sp"
+                        android:layout_height="80sp"
+                        android:layout_marginBottom="5sp"
+                        android:src="@drawable/icon_cambioturno" />
+
+                    <TextView
+                        android:id="@+id/cambioturno"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Cambio Turno"
+                        android:textAlignment="center"
+                        android:textColor="#54565A"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardConfiguracion"
+                android:layout_width="1dp"
+                android:layout_height="150sp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="8sp"
+                android:layout_marginBottom="30sp"
+                android:clickable="true"
+                android:foreground="@drawable/activitycard"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="80sp"
+                        android:layout_height="80sp"
+                        android:layout_marginBottom="5sp"
+                        android:src="@drawable/icon_configuracion" />
+
+                    <TextView
+                        android:id="@+id/txtconfiguracion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Configuración"
+                        android:textAlignment="center"
+                        android:textColor="#54565A"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardIniciodia"
+                android:layout_width="1dp"
+                android:layout_height="150sp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="8sp"
+                android:layout_marginBottom="30sp"
+                android:clickable="true"
+                android:foreground="@drawable/activitycard"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="80sp"
+                        android:layout_height="80sp"
+                        android:layout_marginBottom="5sp"
+                        android:src="@drawable/icon_turno" />
+
+                    <TextView
+                        android:id="@+id/txtiniciodia"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Inicio Dia"
+                        android:textAlignment="center"
+                        android:textColor="#54565A"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardDeposito"
+                android:layout_width="1dp"
+                android:layout_height="150sp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="8sp"
+                android:layout_marginBottom="30sp"
+                android:clickable="true"
+                android:foreground="@drawable/activitycard"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="80sp"
+                        android:layout_height="80sp"
+                        android:layout_marginBottom="5sp"
+                        android:src="@drawable/icon_deposito" />
+
+                    <TextView
+                        android:id="@+id/txtDeposito"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Deposito"
+                        android:textAlignment="center"
+                        android:textColor="#54565A"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardFidelizacion"
+                android:layout_width="1dp"
+                android:layout_height="150sp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="8sp"
+                android:layout_marginBottom="30sp"
+                android:clickable="true"
+                android:foreground="@drawable/activitycard"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="80sp"
+                        android:layout_height="80sp"
+                        android:layout_marginBottom="5sp"
+                        android:src="@drawable/icon_fidelizacion" />
+
+                    <TextView
+                        android:id="@+id/txtFidelizacion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Fidelización"
+                        android:textAlignment="center"
+                        android:textColor="#54565A"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardCara"
+                android:layout_width="1dp"
+                android:layout_height="150sp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="8sp"
+                android:layout_marginBottom="30sp"
+                android:clickable="true"
+                android:foreground="@drawable/activitycard"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="80sp"
+                        android:layout_height="80sp"
+                        android:layout_marginBottom="5sp"
+                        android:src="@drawable/icon_cara" />
+
+                    <TextView
+                        android:id="@+id/txtCara"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Cara"
+                        android:textAlignment="center"
+                        android:textColor="#54565A"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardShop"
+                android:layout_width="1dp"
+                android:layout_height="150sp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="8sp"
+                android:layout_marginBottom="30sp"
+                android:clickable="true"
+                android:foreground="@drawable/activitycard"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="80sp"
+                        android:layout_height="80sp"
+                        android:layout_marginBottom="5sp"
+                        android:src="@drawable/icon_shop" />
+
+                    <TextView
+                        android:id="@+id/txtShop"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Cara"
+                        android:textAlignment="center"
+                        android:textColor="#54565A"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </GridLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
