@@ -11,51 +11,53 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="136dp"
+        android:layout_marginStart="10sp"
+        android:layout_marginTop="20sp"
         android:text="CARA"
         android:textColor="#3C4048"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.065"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ScrollView
-
-        android:layout_width="336dp"
-        android:layout_height="146dp"
+    <HorizontalScrollView
+        android:id="@+id/ScrollCara"
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:layout_marginLeft="10sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10sp"
         android:fillViewport="true"
-        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2">
+        app:layout_constraintTop_toBottomOf="@+id/textView">
 
         <GridLayout
-            android:id="@+id/gridLayout"
-            android:layout_width="match_parent"
+            android:id="@+id/gridCara"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="30sp"
-            android:layout_marginRight="30sp"
             android:layout_weight="12"
             android:columnCount="15"
             android:rowCount="1"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
-
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView"
             app:layout_constraintVertical_bias="0.032">
 
+
             <androidx.cardview.widget.CardView
-                android:id="@+id/grifo01"
-                android:layout_width="1dp"
-                android:layout_height="120sp"
+                android:id="@+id/cara01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:layout_margin="8sp"
-                android:layout_marginBottom="30sp"
                 android:clickable="true"
                 android:foreground="@drawable/activitycard"
                 app:cardBackgroundColor="#fff"
@@ -65,37 +67,49 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_margin="8sp"
                     android:gravity="center"
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="80sp"
-                        android:layout_height="80sp"
-                        android:layout_marginBottom="5sp"
-                        android:src="@drawable/icon_gas" />
+                        android:layout_width="70sp"
+                        android:layout_height="70sp"
+                        android:src="@drawable/icon_caranum" />
 
-                    <TextView
-                        android:id="@+id/txttienda1"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Grifo"
-                        android:textAlignment="center"
-                        android:textColor="#54565A"
-                        android:textSize="16sp"
-                        android:textStyle="bold" />
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/numcara01"
+                        android:layout_width="30sp"
+                        android:layout_height="30sp"
+                        android:layout_marginLeft="-5sp"
+                        android:layout_marginTop="-45sp"
+                        android:backgroundTint="#3456CE"
+                        app:cardCornerRadius="50sp"
+                        app:cardElevation="10sp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="01"
+                            android:textAlignment="center"
+                            android:textColor="#FFF"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                    </androidx.cardview.widget.CardView>
+
 
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/grifp2"
-                android:layout_width="1dp"
-                android:layout_height="120sp"
+                android:id="@+id/cara02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:layout_margin="8sp"
-                android:layout_marginBottom="30sp"
                 android:clickable="true"
                 android:foreground="@drawable/activitycard"
                 app:cardBackgroundColor="#fff"
@@ -105,37 +119,49 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_margin="8sp"
                     android:gravity="center"
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="80sp"
-                        android:layout_height="80sp"
-                        android:layout_marginBottom="5sp"
-                        android:src="@drawable/icon_gas" />
+                        android:layout_width="70sp"
+                        android:layout_height="70sp"
+                        android:src="@drawable/icon_caranum" />
 
-                    <TextView
-                        android:id="@+id/txttienda2"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Grifo"
-                        android:textAlignment="center"
-                        android:textColor="#54565A"
-                        android:textSize="16sp"
-                        android:textStyle="bold" />
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/numcara02"
+                        android:layout_width="30sp"
+                        android:layout_height="30sp"
+                        android:layout_marginLeft="-5sp"
+                        android:layout_marginTop="-45sp"
+                        android:backgroundTint="#3456CE"
+                        app:cardCornerRadius="50sp"
+                        app:cardElevation="10sp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="02"
+                            android:textAlignment="center"
+                            android:textColor="#FFF"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                    </androidx.cardview.widget.CardView>
+
 
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/grifo3"
-                android:layout_width="1dp"
-                android:layout_height="120sp"
+                android:id="@+id/cara03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:layout_margin="8sp"
-                android:layout_marginBottom="30sp"
                 android:clickable="true"
                 android:foreground="@drawable/activitycard"
                 app:cardBackgroundColor="#fff"
@@ -145,37 +171,49 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_margin="8sp"
                     android:gravity="center"
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="80sp"
-                        android:layout_height="80sp"
-                        android:layout_marginBottom="5sp"
-                        android:src="@drawable/icon_gas" />
+                        android:layout_width="70sp"
+                        android:layout_height="70sp"
+                        android:src="@drawable/icon_caranum" />
 
-                    <TextView
-                        android:id="@+id/txttiend5a"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Grifo"
-                        android:textAlignment="center"
-                        android:textColor="#54565A"
-                        android:textSize="16sp"
-                        android:textStyle="bold" />
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/numcara03"
+                        android:layout_width="30sp"
+                        android:layout_height="30sp"
+                        android:layout_marginLeft="-5sp"
+                        android:layout_marginTop="-45sp"
+                        android:backgroundTint="#3456CE"
+                        app:cardCornerRadius="50sp"
+                        app:cardElevation="10sp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="03"
+                            android:textAlignment="center"
+                            android:textColor="#FFF"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                    </androidx.cardview.widget.CardView>
+
 
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/grifo34"
-                android:layout_width="1dp"
-                android:layout_height="120sp"
+                android:id="@+id/cara04"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:layout_margin="8sp"
-                android:layout_marginBottom="30sp"
                 android:clickable="true"
                 android:foreground="@drawable/activitycard"
                 app:cardBackgroundColor="#fff"
@@ -185,24 +223,494 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_margin="8sp"
                     android:gravity="center"
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="80sp"
-                        android:layout_height="80sp"
-                        android:layout_marginBottom="5sp"
-                        android:src="@drawable/icon_gas" />
+                        android:layout_width="70sp"
+                        android:layout_height="70sp"
+                        android:src="@drawable/icon_caranum" />
 
-                    <TextView
-                        android:id="@+id/txttienda4"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Grifo"
-                        android:textAlignment="center"
-                        android:textColor="#54565A"
-                        android:textSize="16sp"
-                        android:textStyle="bold" />
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/numcara04"
+                        android:layout_width="30sp"
+                        android:layout_height="30sp"
+                        android:layout_marginLeft="-5sp"
+                        android:layout_marginTop="-45sp"
+                        android:backgroundTint="#3456CE"
+                        app:cardCornerRadius="50sp"
+                        app:cardElevation="10sp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="04"
+                            android:textAlignment="center"
+                            android:textColor="#FFF"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cara05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="8sp"
+                android:clickable="true"
+                android:foreground="@drawable/activitycard"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8sp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="70sp"
+                        android:layout_height="70sp"
+                        android:src="@drawable/icon_caranum" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/numcara05"
+                        android:layout_width="30sp"
+                        android:layout_height="30sp"
+                        android:layout_marginLeft="-5sp"
+                        android:layout_marginTop="-45sp"
+                        android:backgroundTint="#3456CE"
+                        app:cardCornerRadius="50sp"
+                        app:cardElevation="10sp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="05"
+                            android:textAlignment="center"
+                            android:textColor="#FFF"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cara06"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="8sp"
+                android:clickable="true"
+                android:foreground="@drawable/activitycard"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8sp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="70sp"
+                        android:layout_height="70sp"
+                        android:src="@drawable/icon_caranum" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/numcara06"
+                        android:layout_width="30sp"
+                        android:layout_height="30sp"
+                        android:layout_marginLeft="-5sp"
+                        android:layout_marginTop="-45sp"
+                        android:backgroundTint="#3456CE"
+                        app:cardCornerRadius="50sp"
+                        app:cardElevation="10sp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="06"
+                            android:textAlignment="center"
+                            android:textColor="#FFF"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/textmanguera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10sp"
+        android:layout_marginTop="10sp"
+        android:text="MANGUERA"
+        android:textColor="#3C4048"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ScrollCara" />
+
+    <HorizontalScrollView
+        android:id="@+id/ScrollManguera"
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:layout_marginLeft="10sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10sp"
+        android:fillViewport="true"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textmanguera">
+
+        <GridLayout
+            android:id="@+id/gridManguera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="12"
+            android:columnCount="15"
+            android:rowCount="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintVertical_bias="0.032">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/mangueragas90"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="8sp"
+                android:clickable="true"
+                android:foreground="@drawable/activitycard"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8sp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="70sp"
+                        android:layout_height="70sp"
+                        android:src="@drawable/icon_fulmag" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/gas90"
+                        android:layout_width="30sp"
+                        android:layout_height="30sp"
+                        android:layout_marginTop="-45sp"
+                        android:backgroundTint="#E1CC16"
+                        app:cardCornerRadius="50sp"
+                        app:cardElevation="10sp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="GAS 90"
+                            android:textAlignment="center"
+                            android:textColor="#FFF"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/mangueragas84"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="8sp"
+                android:clickable="true"
+                android:foreground="@drawable/activitycard"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8sp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="70sp"
+                        android:layout_height="70sp"
+                        android:src="@drawable/icon_fulmag" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/gas84"
+                        android:layout_width="30sp"
+                        android:layout_height="30sp"
+                        android:layout_marginTop="-45sp"
+                        android:backgroundTint="#E61717"
+                        app:cardCornerRadius="50sp"
+                        app:cardElevation="10sp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="GAS 84"
+                            android:textAlignment="center"
+                            android:textColor="#FFF"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/mangueradiesel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="8sp"
+                android:clickable="true"
+                android:foreground="@drawable/activitycard"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8sp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="70sp"
+                        android:layout_height="70sp"
+                        android:src="@drawable/icon_fulmag" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/diesel"
+                        android:layout_width="30sp"
+                        android:layout_height="30sp"
+                        android:layout_marginTop="-45sp"
+                        android:backgroundTint="#050505"
+                        app:cardCornerRadius="50sp"
+                        app:cardElevation="10sp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="Diesel"
+                            android:textAlignment="center"
+                            android:textColor="#FFF"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/mangueragas95"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="8sp"
+                android:clickable="true"
+                android:foreground="@drawable/activitycard"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8sp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="70sp"
+                        android:layout_height="70sp"
+                        android:src="@drawable/icon_fulmag" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/gas95"
+                        android:layout_width="30sp"
+                        android:layout_height="30sp"
+                        android:layout_marginTop="-45sp"
+                        android:backgroundTint="#072DB1"
+                        app:cardCornerRadius="50sp"
+                        app:cardElevation="10sp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="GAS 95"
+                            android:textAlignment="center"
+                            android:textColor="#FFF"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/mangueragas97"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="8sp"
+                android:clickable="true"
+                android:foreground="@drawable/activitycard"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8sp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="70sp"
+                        android:layout_height="70sp"
+                        android:src="@drawable/icon_fulmag" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/gas97"
+                        android:layout_width="30sp"
+                        android:layout_height="30sp"
+                        android:layout_marginTop="-45sp"
+                        android:backgroundTint="#119C2E"
+                        app:cardCornerRadius="50sp"
+                        app:cardElevation="10sp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="GAS 97"
+                            android:textAlignment="center"
+                            android:textColor="#FFF"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/mangueraglp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="8sp"
+                android:clickable="true"
+                android:foreground="@drawable/activitycard"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8sp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="70sp"
+                        android:layout_height="70sp"
+                        android:src="@drawable/icon_fulmag" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/glp"
+                        android:layout_width="30sp"
+                        android:layout_height="30sp"
+                        android:layout_marginTop="-45sp"
+                        android:backgroundTint="#E36510"
+                        app:cardCornerRadius="50sp"
+                        app:cardElevation="10sp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="GLP"
+                            android:textAlignment="center"
+                            android:textColor="#FFF"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
+                    </androidx.cardview.widget.CardView>
+
 
                 </LinearLayout>
 
@@ -210,40 +718,29 @@
 
 
         </GridLayout>
-    </ScrollView>
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="MANGUERA"
-        android:textColor="#3C4048"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    </HorizontalScrollView>
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="156dp"
+        android:layout_marginStart="10sp"
+        android:layout_marginTop="10sp"
         android:text="MODALIDAD"
         android:textColor="#3C4048"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.077"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/ScrollManguera" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="20sp"
+        android:layout_marginStart="10sp"
+        android:layout_marginTop="10sp"
         android:text="OPERACIÓN"
         android:textColor="#3C4048"
         android:textSize="18sp"
@@ -255,8 +752,8 @@
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="24sp"
+        android:layout_marginStart="10sp"
+        android:layout_marginTop="10sp"
         android:text="TRANSACCIONES"
         android:textColor="#3C4048"
         android:textSize="16sp"
@@ -267,139 +764,141 @@
     <Button
         android:id="@+id/btnlibre"
         android:layout_width="110sp"
-        android:layout_height="50sp"
-        android:layout_marginStart="24sp"
-        android:layout_marginTop="20sp"
+        android:layout_height="45sp"
+        android:layout_marginStart="10sp"
+        android:layout_marginTop="10sp"
         android:letterSpacing="0.05"
         android:text="LIBRE"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
-        android:textSize="12sp"
-        app:cornerRadius="20sp"
+        android:textSize="10sp"
+        app:cornerRadius="10sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <Button
         android:id="@+id/btnsoles"
         android:layout_width="110sp"
-        android:layout_height="50sp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
+        android:layout_height="45sp"
+        android:layout_marginStart="24sp"
+        android:layout_marginTop="10sp"
         android:letterSpacing="0.05"
         android:text="SOLES"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
-        android:textSize="12sp"
-        app:cornerRadius="20sp"
+        android:textSize="10sp"
+        app:cornerRadius="10sp"
         app:layout_constraintStart_toEndOf="@+id/btnlibre"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <Button
         android:id="@+id/btngalones"
         android:layout_width="110sp"
-        android:layout_height="50sp"
+        android:layout_height="45sp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="10sp"
         android:letterSpacing="0.05"
         android:text="GALONES"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
-        android:textSize="12sp"
-        app:cornerRadius="20sp"
+        android:textSize="10sp"
+        app:cornerRadius="10sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.242"
+        app:layout_constraintHorizontal_bias="0.727"
         app:layout_constraintStart_toEndOf="@+id/btnsoles"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <Button
         android:id="@+id/btnboleta"
         android:layout_width="110sp"
-        android:layout_height="50sp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="20sp"
+        android:layout_height="45sp"
+        android:layout_marginStart="10sp"
+        android:layout_marginTop="10sp"
         android:letterSpacing="0.05"
         android:text="BOLETA"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
-        android:textSize="12sp"
-        app:cornerRadius="20sp"
+        android:textSize="10sp"
+        app:cornerRadius="10sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <Button
         android:id="@+id/btnfactura"
         android:layout_width="110sp"
-        android:layout_height="50sp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="20dp"
+        android:layout_height="45sp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="10sp"
         android:letterSpacing="0.05"
         android:text="FACTURA"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
-        android:textSize="12sp"
-        app:cornerRadius="20sp"
+        android:textSize="10sp"
+        app:cornerRadius="10sp"
         app:layout_constraintStart_toEndOf="@+id/btnboleta"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <Button
         android:id="@+id/btnfac"
         android:layout_width="110sp"
-        android:layout_height="50sp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="20dp"
+        android:layout_height="45sp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="10sp"
         android:letterSpacing="0.05"
         android:text="FAC."
         android:textAlignment="center"
         android:textColor="#FFFFFF"
-        android:textSize="12sp"
-        app:cornerRadius="20sp"
+        android:textSize="10sp"
+        app:cornerRadius="10sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.086"
         app:layout_constraintStart_toEndOf="@+id/btnfactura"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <Button
         android:id="@+id/btnserafi"
         android:layout_width="110sp"
-        android:layout_height="50sp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="10sp"
+        android:layout_height="45sp"
+        android:layout_marginStart="10sp"
+        android:layout_marginTop="5sp"
         android:letterSpacing="0.05"
         android:text="SERAFI"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
-        android:textSize="12sp"
-        app:cornerRadius="20sp"
+        android:textSize="10sp"
+        app:cornerRadius="10sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnboleta" />
 
     <Button
         android:id="@+id/btncanje"
         android:layout_width="110sp"
-        android:layout_height="50sp"
-        android:layout_marginStart="16sp"
-        android:layout_marginTop="10sp"
+        android:layout_height="45sp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="5sp"
         android:letterSpacing="0.05"
         android:text="CANJE"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
-        android:textSize="12sp"
-        app:cornerRadius="20sp"
+        android:textSize="10sp"
+        app:cornerRadius="10sp"
         app:layout_constraintStart_toEndOf="@+id/btnserafi"
         app:layout_constraintTop_toBottomOf="@+id/btnfactura" />
 
     <Button
         android:id="@+id/btnncredito"
         android:layout_width="110sp"
-        android:layout_height="50sp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="10sp"
+        android:layout_height="45sp"
+        android:layout_marginStart="24sp"
+        android:layout_marginTop="5sp"
         android:letterSpacing="0.05"
         android:text="NOTA CREDITO"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
-        android:textSize="12sp"
-        app:cornerRadius="20sp"
+        android:textSize="10sp"
+        app:cornerRadius="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.09"
         app:layout_constraintStart_toEndOf="@+id/btncanje"
         app:layout_constraintTop_toBottomOf="@+id/btnfac" />
 </androidx.constraintlayout.widget.ConstraintLayout>
