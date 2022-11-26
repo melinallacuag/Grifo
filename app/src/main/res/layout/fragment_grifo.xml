@@ -221,7 +221,7 @@
                         android:id="@+id/txtconfiguracion"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Configuración"
+                        android:text="Configuración Lado"
                         android:textAlignment="center"
                         android:textColor="#54565A"
                         android:textSize="16sp"
@@ -352,6 +352,86 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/cardAnular"
+                android:layout_width="1dp"
+                android:layout_height="150sp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="8sp"
+                android:layout_marginBottom="30sp"
+                android:clickable="true"
+                android:foreground="@drawable/activitycard"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="80sp"
+                        android:layout_height="80sp"
+                        android:layout_marginBottom="5sp"
+                        android:src="@drawable/icon_cancelar" />
+
+                    <TextView
+                        android:id="@+id/txtAnular"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Anular"
+                        android:textAlignment="center"
+                        android:textColor="#54565A"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardConsultarComp"
+                android:layout_width="1dp"
+                android:layout_height="150sp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="8sp"
+                android:layout_marginBottom="30sp"
+                android:clickable="true"
+                android:foreground="@drawable/activitycard"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="80sp"
+                        android:layout_height="80sp"
+                        android:layout_marginBottom="5sp"
+                        android:src="@drawable/icon_consultarcomp" />
+
+                    <TextView
+                        android:id="@+id/txtConsultarComp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Consultar Comprobante"
+                        android:textAlignment="center"
+                        android:textColor="#54565A"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
                 android:id="@+id/cardCara"
                 android:layout_width="1dp"
                 android:layout_height="150sp"
@@ -421,7 +501,7 @@
                         android:id="@+id/txtShop"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Cara"
+                        android:text="Tienda"
                         android:textAlignment="center"
                         android:textColor="#54565A"
                         android:textSize="16sp"
@@ -430,6 +510,8 @@
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
+
+
         </GridLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
