@@ -22,10 +22,12 @@ class FacturaFragment : Fragment() {
     ): View? {
         val bind = FragmentFacturaBinding.inflate(layoutInflater)
         val galonesFragment = GalonesFragment()
+
         bind.btngalones.setOnClickListener {
 
             galonesFragment.show((activity as AppCompatActivity).supportFragmentManager,"shop")
         }
+
 
         return bind.root
     }
