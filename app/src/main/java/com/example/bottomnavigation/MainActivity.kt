@@ -11,7 +11,7 @@ class MainActivity : AppCompatActivity() {
     private val perfilusuarioFragment = PerfilusuarioFragment()
     private  val tiendaFragment = TiendaFragment()
     private  val grifoFragment = GrifoFragment()
-
+    private  val reporteFragment = ReporteFragment()
     private val inicioFragment = InicioFragment()
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
                 R.id.tienda-> replaceFragment(tiendaFragment)
                 R.id.inicio -> replaceFragment(inicioFragment)
                 R.id.grifo -> replaceFragment(grifoFragment)
-
+                R.id.reporte -> replaceFragment(reporteFragment)
 
             }
             true

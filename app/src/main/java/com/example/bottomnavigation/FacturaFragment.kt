@@ -6,7 +6,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.FragmentManager
 import com.example.bottomnavigation.databinding.FragmentFacturaBinding
 import com.example.bottomnavigation.databinding.FragmentGrifoBinding
 import kotlinx.android.synthetic.main.activity_login.*
@@ -26,9 +28,11 @@ class FacturaFragment : Fragment() {
         val operacionFacturacionFragment = OperacionFacturacionFragment()
 
 
+
         bind.btngalones.setOnClickListener {
 
             galonesFragment.show((activity as AppCompatActivity).supportFragmentManager,"shop")
+
         }
         bind.btnsoles.setOnClickListener {
 
