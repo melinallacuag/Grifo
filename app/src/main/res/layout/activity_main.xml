@@ -13,6 +13,7 @@
         android:layout_marginLeft="10sp"
         android:layout_marginRight="10sp"
         android:layout_marginBottom="20sp"
+        app:itemTextColor="@color/white"
         android:background="@drawable/solid_menu"
         app:itemIconSize="30sp"
         app:itemIconTint="@drawable/item_selector"
