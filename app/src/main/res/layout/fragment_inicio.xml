@@ -11,23 +11,26 @@
         android:id="@+id/gridLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="20sp"
         android:layout_weight="3"
         android:columnCount="3"
         android:rowCount="2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.895">
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardTienda"
-
-            android:layout_width="1dp"
-            android:layout_height="125sp"
+            android:layout_width="wrap_content"
+            android:layout_height="150sp"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:layout_margin="8sp"
-            android:layout_marginBottom="30sp"
+            android:layout_marginBottom="20sp"
             app:cardBackgroundColor="#fff"
             app:cardCornerRadius="15dp"
             app:cardElevation="5sp">
@@ -60,12 +63,12 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardGrifo"
-            android:layout_width="1dp"
-            android:layout_height="125sp"
+            android:layout_width="wrap_content"
+            android:layout_height="150sp"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:layout_margin="8sp"
-            android:layout_marginBottom="30sp"
+            android:layout_marginBottom="20sp"
             android:clickable="true"
             android:foreground="@drawable/activitycard"
             app:cardBackgroundColor="#fff"
@@ -100,12 +103,12 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardUsuario"
-            android:layout_width="1dp"
-            android:layout_height="125sp"
+            android:layout_width="wrap_content"
+            android:layout_height="150sp"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:layout_margin="8dp"
-            android:layout_marginBottom="30sp"
+            android:layout_marginBottom="20sp"
             android:clickable="true"
             android:foreground="@drawable/activitycard"
             app:cardBackgroundColor="#fff"
@@ -140,12 +143,12 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardReporte"
-            android:layout_width="1dp"
-            android:layout_height="125sp"
+            android:layout_width="wrap_content"
+            android:layout_height="150sp"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:layout_margin="8dp"
-            android:layout_marginBottom="30sp"
+            android:layout_marginBottom="20sp"
             android:clickable="true"
             android:foreground="@drawable/activitycard"
             app:cardBackgroundColor="#fff"
@@ -179,12 +182,12 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/card"
-            android:layout_width="1dp"
-            android:layout_height="125sp"
+            android:layout_width="wrap_content"
+            android:layout_height="150sp"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:layout_margin="8dp"
-            android:layout_marginBottom="30sp"
+            android:layout_marginBottom="20sp"
             android:clickable="true"
             android:foreground="@drawable/activitycard"
             app:cardBackgroundColor="#fff"
@@ -219,12 +222,12 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardSalir"
-            android:layout_width="1dp"
-            android:layout_height="125sp"
+            android:layout_width="wrap_content"
+            android:layout_height="150sp"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:layout_margin="8dp"
-            android:layout_marginBottom="30sp"
+            android:layout_marginBottom="20sp"
             android:clickable="true"
             android:foreground="@drawable/activitycard"
             app:cardBackgroundColor="#fff"
@@ -261,14 +264,15 @@
     </GridLayout>
 
     <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/shapeableImageView"
         android:layout_width="90sp"
         android:layout_height="90sp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="20dp"
         android:scaleType="centerCrop"
         android:src="@drawable/foto_empleador"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.771"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/horario"
         app:layout_constraintTop_toTopOf="parent"
         app:shapeAppearanceOverlay="@style/roudperfil" />
@@ -278,7 +282,7 @@
         android:layout_width="250sp"
         android:layout_height="30sp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="60dp"
         android:text="Miguel Juan Lazaro Peña "
         android:textAlignment="viewStart"
         android:textColor="#FFFFFF"
@@ -292,7 +296,7 @@
         android:layout_width="250sp"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="8dp"
         android:text="Turno 01"
         android:textAlignment="viewStart"
         android:textColor="#FFFFFF"
@@ -304,7 +308,7 @@
         android:layout_width="250sp"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="10dp"
         android:text="20/01/22 10:00 a.m"
         android:textAlignment="viewStart"
         android:textColor="#FFFFFF"
@@ -313,18 +317,19 @@
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/imageView2"
-        android:layout_width="364dp"
-        android:layout_height="237dp"
-        android:layout_marginBottom="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
         android:adjustViewBounds="true"
         android:scaleType="centerCrop"
         android:src="@drawable/img03"
         app:layout_constraintBottom_toTopOf="@+id/gridLayout"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.897"
+        app:layout_constraintTop_toBottomOf="@+id/turno"
+        app:layout_constraintVertical_bias="0.514"
         app:shapeAppearanceOverlay="@style/roudimage" />
 
 
