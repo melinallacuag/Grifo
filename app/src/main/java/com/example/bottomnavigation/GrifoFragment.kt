@@ -18,10 +18,20 @@ class GrifoFragment : Fragment() {
     ): View? {
         val bind = FragmentGrifoBinding.inflate(layoutInflater)
         val facturaFragment = FacturaFragment()
+        val caraFragment = CaraFragment()
         bind.cardFacturacion.setOnClickListener {
             fragmentManager?.beginTransaction()?.apply {
 
                 replace(R.id.frame_layout,facturaFragment,GrifoFragment::class.java.simpleName)
+                    .addToBackStack(null)
+                    .commit()
+            }
+        }
+
+        bind.cardCara.setOnClickListener {
+            fragmentManager?.beginTransaction()?.apply {
+
+                replace(R.id.frame_layout,caraFragment,CaraFragment::class.java.simpleName)
                     .addToBackStack(null)
                     .commit()
             }
