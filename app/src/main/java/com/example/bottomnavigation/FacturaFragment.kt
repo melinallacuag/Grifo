@@ -23,6 +23,7 @@ class FacturaFragment : Fragment() {
         val bind = FragmentFacturaBinding.inflate(layoutInflater)
         val galonesFragment = GalonesFragment()
         val solesFragment = SolesFragment()
+        val operacionFacturacionFragment = OperacionFacturacionFragment()
 
 
         bind.btngalones.setOnClickListener {
@@ -32,6 +33,11 @@ class FacturaFragment : Fragment() {
         bind.btnsoles.setOnClickListener {
 
             solesFragment.show((activity as AppCompatActivity).supportFragmentManager,"shop")
+        }
+
+        bind.btnfactura.setOnClickListener {
+
+            operacionFacturacionFragment.show((activity as AppCompatActivity).supportFragmentManager,"shop")
         }
 
         return bind.root

@@ -6,7 +6,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.bottomnavigation.databinding.FragmentGrifoBinding
-import com.example.bottomnavigation.databinding.FragmentPerfilusuarioBinding
 
 
 class GrifoFragment : Fragment() {
@@ -36,6 +35,7 @@ class GrifoFragment : Fragment() {
                     .commit()
             }
         }
+
 
         return bind.root
     }
