@@ -80,7 +80,9 @@
             app:layout_constraintHorizontal_bias="0.502"
             app:layout_constraintStart_toStartOf="@+id/cat_gaseosa"
             app:layout_constraintTop_toTopOf="@+id/cat_gaseosa" />
-
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"></LinearLayout>
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/cat_bebidas"
             android:layout_width="match_parent"
